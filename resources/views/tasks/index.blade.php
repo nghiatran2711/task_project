@@ -41,7 +41,7 @@
                         <form action="{{ route('task.destroy',['id'=>$task->id]) }}" method="POST">
                             @csrf
                             @method('DELETE')
-                            <button type="submit" class="btn btn-danger">Detete</button>
+                            <button type="submit" class="btn btn-danger" onclick="return confirm('are you sure delete?')">Detete</button>
                         </form>
                     </td>
                 </tr>
