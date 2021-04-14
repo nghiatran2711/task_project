@@ -17,6 +17,8 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    private $user;
+
     public function index()
     {
         //

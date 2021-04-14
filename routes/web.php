@@ -23,6 +23,7 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';
+require __DIR__.'/admin.php';
 
 Route::group(['prefix'=>'user','as'=>'user.'],function () {
     Route::get('/list', [UserController::class, 'index'])->name('index');
